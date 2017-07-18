@@ -1,3 +1,21 @@
 .ticket-display-list, .price-total, .ticket-full-display {
   display:none;
 }
+
+.cartItem {
+  cursor:pointer;
+  color: blue;
+}
+
+.cartItem:hover {
+  text-decoration: underline;
+}
+
+.removeItem {
+  cursor:pointer;
+  color: red;
+}
+
+.removeItem:hover {
+  text-decoration: underline;
+}

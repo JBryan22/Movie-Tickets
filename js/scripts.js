@@ -43,7 +43,7 @@ function isMatinee(time) {
   }
 }
 
-var ticketPrices = [];
+var total = 0;
 
 //UI Logic
 
@@ -54,10 +54,9 @@ $(function(){
     var inputtedTime = $("#time").val();
     var inputtedAge = $("#age").val();
     var inputtedIsNew = $("#movie option:selected").hasClass('new');
-    var total = 0;
 
     var newTicket = new Ticket(inputtedMovie, inputtedTime, inputtedAge, inputtedIsNew);
-    total += newTicket.price
+    total += newTicket.price;
     // ticketPrices.push(newTicket.getPrice());
 
     $('.ticket-display-list ul').append('<li><span class="cartItem">' + newTicket.getShoppingCartInfo() + '</span><span class="removeItem"> Remove from cart</span></li>');
@@ -75,7 +74,8 @@ $(function(){
     });
     $(".removeItem").last().click(function(){
       this.parentNode.remove();
-      total -= this.previousSibling
+      var moneyStart = this.previousSibling.innerHTML.indexOf('$') + 1;
+      total -= this.previousSibling.innerHTML.substr(moneyStart, 2);
       $('.price').text(total);
     })
   });
