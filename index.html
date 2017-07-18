@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <h1>Buy your movie tickets!</h1>
-        <form class="movie-form">
+      <form class="movie-form">
         <div class="form-group">
           <label for="movie">Select Movie:</label>
           <select class="form-control" id="movie">
@@ -49,7 +49,25 @@
       </form>
 
       <!-- Display Section -->
-      <div class="ticket-display-list"
+      <div class="ticket-display-list">
+        <p>In cart:</p>
+        <ul>
+
+        </ul>
+      </div>
+      <div class="price-total">
+        <p>Total Price: $<span class="price"></span></p>
+        <form id="purchase">
+          <button class="btn btn-success">Purchase Tickets -></button>
+        </form>
+      </div>
+
+      <div class="ticket-full-display">
+        <h3></h3>
+        <p>Time: <span class="full-display-time"></span></p>
+        <p>Screen: <span class="full-display-screen"></span></p>
+        <p>Price: $<span class="full-display-price"></span></p>
+      </div>
 
     </div>
   </body>
