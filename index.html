@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Buy your movie tickets!</h1>
+        <form class="movie-form">
+        <div class="form-group">
+          <label for="movie">Select Movie:</label>
+          <select class="form-control" id="movie">
+            <option class="new">Spider-Man: Homecoming</option>
+            <option class="new">War for the Planet of the Apes</option>
+            <option class="new">Despicable Me 3</option>
+            <option>The Big Sick</option>
+            <option>Baby Driver</option>
+            <option>Wish Upon</option>
+            <option>Wonder Woman</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="time">Select Movie Time:</label>
+          <select class="form-control" id="time">
+            <option>10:00am</option>
+            <option>11:30am</option>
+            <option>12:20pm</option>
+            <option>3:00pm</option>
+            <option>4:00pm</option>
+            <option>6:00pm</option>
+            <option>7:30pm</option>
+            <option>9:10pm</option>
+            <option>10:15pm</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age">Please enter your age:</label>
+          <input class="form-control" type="number" id="age">
+        </div>
+        <button type="submit" class="btn btn-info">Add Ticket</button>
+      </form>
+
+      <!-- Display Section -->
+      <div class="ticket-display-list"
+
+    </div>
+  </body>
+</html>
+
+
+<!--
+
+1. User can select a movie
+
+2. User can select a time
+
+3. User can enter their age
+
+4. Once submitted, the price of the ticket will be displayed.
+
+5. User can choose to purchase the ticket.
+
+ADDITIONAL CHALLENEGES:
+
+Change movie times based on which movie was selected.
+
+Label certain movies as Mature and prevent people under 18 from purchasing tickets.
+
+-->
